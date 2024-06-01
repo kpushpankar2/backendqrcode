@@ -9,8 +9,10 @@ const app = express();
 const port = process.env.PORT || 6000;
 app.use(express.json());
 
+
+
 const corsOptions = {
-  origin: ["http://localhost:3000"],
+  origin: ["https://frontendqrcode-theta.vercel.app"],
   methods: ["POST", "GET", "PUT", "DELETE"],
   credentials: true,
 };
